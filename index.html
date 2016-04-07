@@ -13,28 +13,5 @@
     <h4>Carte de couverture des départements par l'API monuments historiques classés ou inscrits</h4>
     <object id="svg" data="departements.svg" alt="La France, Monsieur." type="image/svg+xml"></object>
   </body>
-  <script type="text/javascript">
-
-  document.getElementById("svg").addEventListener("load", function() {
-    var doc = this.getSVGDocument();
-    var coveredDepartments = {
-      "09": "Ariège",
-      "12": "Aveyron",
-      "31": "Haute-Garonne",
-      "32": "Gers",
-      "46": "Lot",
-      "65": "Hautes-Pyrénées",
-      "81": "Tarn",
-      "82": "Tarn-et-Garonne",
-      /* Experimental */
-      "73": "Savoie"
-    }
-    Object.keys(coveredDepartments).forEach(function(code){
-      var element = doc.querySelector("[data-insee='" + code + "']")
-      console.log(element)
-      element.style = "fill: #819FF7;"
-    })
-  });
-
-  </script>
+  <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
 </html>
