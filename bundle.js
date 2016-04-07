@@ -94,7 +94,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  font-family: 'Fira Sans';\n  text-align: center;\n  font-size: 150%;\n}\n\nh1, h2, h3, h4 {\n  font-weight: 300;\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Fira Sans';\n  text-align: center;\n  font-size: 150%;\n  color: #333;\n}\n\nh1, h2, h3, h4 {\n  font-weight: 300;\n}\n\n#contact {\n  position: fixed;\n  top: 2.2em;\n  right: 2em;\n  color: #333;\n}\n", ""]);
 
 	// exports
 
