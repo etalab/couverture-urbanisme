@@ -7,7 +7,7 @@ document.getElementById("svg").addEventListener("load", function() {
   Object.keys(coverage).forEach(function(color){
     coverage[color].forEach(function(code){
       var element = doc.querySelector("[data-insee='" + code + "']")
-      element.style = "fill: " + color
+      element.style.fill = color;
     })
   })
 });
